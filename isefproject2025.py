@@ -48,7 +48,7 @@ def compute_confidence_interval(X_kmer, model, bootstrap_samples=1000):
        # ✅ Streamlit animation
        if _ % 200 == 0:  # Update every 200 iterations
            progress_bar.progress(int((_ / bootstrap_samples) * 100))
-   progress_bar.progress(1)
+   progress_bar.progress(100)
 
    lower_bound, upper_bound = np.percentile(bootstrap_preds, [2.5, 97.5])
    return round(lower_bound, 3), round(upper_bound, 3)
