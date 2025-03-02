@@ -141,6 +141,6 @@ if st.button("🔍 Predict"):
 # ✅ Write the file to disk
 with open("app.py", "w") as f:
    f.write(app_code)
-
+#kdfgjldfkj
 
 print("✅ app.py has been successfully created!")
