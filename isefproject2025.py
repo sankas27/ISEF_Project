@@ -85,8 +85,6 @@ sequence_input = st.text_area("🧬 Enter Sequence:", "")
 
 if st.button("🔍 Predict"):
    if sequence_input:
-       st.info("Processing...")
-
 
        # ✅ Extract Features
        X_kmer = extract_kmer_features(sequence_input)
